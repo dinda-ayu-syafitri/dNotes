@@ -80,7 +80,7 @@ function SignUp() {
                 <p>
                   <span className="font-medium">Sign Up Success! </span>
                   You can now login to your account,{" "}
-                  <Link to={"/Login"} className="underline">
+                  <Link to={"/signin"} className="underline">
                     Login
                   </Link>
                 </p>

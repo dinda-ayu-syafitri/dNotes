@@ -90,7 +90,7 @@ function SidebarApp() {
             onClick={toggleSidebar}
           >
             <img
-              src="\src\assets\Dnotes.png"
+              src="Dnotes.svg"
               className={`h-6 sm:h-8 ${isOpen ? "mr-3" : "mr-0"}`}
               alt="Dnotes Logo"
             />
@@ -175,7 +175,7 @@ function SidebarApp() {
               onClick={toggleSidebar}
             >
               <img
-                src="\src\assets\Dnotes.png"
+                src="Dnotes.svg"
                 className={`h-6 sm:h-8 ${isOpen ? "mr-3" : "mr-0"}`}
                 alt="Dnotes Logo"
               />

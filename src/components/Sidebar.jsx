@@ -92,14 +92,14 @@ function SidebarApp() {
             <img
               src="Dnotes.svg"
               className={`h-6 sm:h-8 ${isOpen ? "mr-3" : "mr-0"}`}
-              alt="Dnotes Logo"
+              alt="dNotes Logo"
             />
             {!isOpen && (
               <MdKeyboardArrowRight size={"1.5rem"} className="text-white" />
             )}
             {isOpen && (
               <span className="self-center text-xl text-white font-semibold whitespace-nowrap dark:text-white">
-                DNotes
+                dNotes
               </span>
             )}
           </div>
@@ -177,11 +177,11 @@ function SidebarApp() {
               <img
                 src="Dnotes.svg"
                 className={`h-6 sm:h-8 ${isOpen ? "mr-3" : "mr-0"}`}
-                alt="Dnotes Logo"
+                alt="dNotes Logo"
               />
               {isOpen && (
                 <span className="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">
-                  DNotes
+                  dNotes
                 </span>
               )}
             </div>

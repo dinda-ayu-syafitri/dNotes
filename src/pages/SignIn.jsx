@@ -89,7 +89,7 @@ function SignIn() {
                 </div>
                 <TextInput
                   id="email"
-                  placeholder="name@flowbite.com"
+                  placeholder="name@mail.com"
                   required
                   type="email"
                   value={formik.values.email}

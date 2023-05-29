@@ -124,7 +124,7 @@ function SignUp() {
                 </div>
                 <TextInput
                   id="email"
-                  placeholder="name@flowbite.com"
+                  placeholder="name@mail.com"
                   required
                   type="email"
                   value={formik.values.email}
@@ -186,9 +186,7 @@ function SignUp() {
       </div>
       <div className="text-center col-span-1 sm:col-span-3 flex justify-center items-center bg-[#4d4732] text-white flex-col py-5">
         <Lottie options={defaultOptions} height={200} width={200} />
-        <h1 className="text-2xl sm:text-3xl font-bold">
-          Welcome Back to dNotes !
-        </h1>
+        <h1 className="text-2xl sm:text-3xl font-bold">Welcome to dNotes !</h1>
         <p>Let's keep your notes organized !</p>
       </div>
     </div>

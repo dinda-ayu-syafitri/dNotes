@@ -107,7 +107,9 @@ function EditNote() {
             />
           </div>
 
-          <Button type="submit">Edit Note</Button>
+          <Button type="submit" className="btn-primary">
+            Edit Note
+          </Button>
         </form>
       </div>
     </div>

@@ -2,6 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 body {
   height: 100vh;
+  background-color: #fdfcf6;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn-primary {
+  background-color: #c29824 !important;
+}
+
+.btn-primary:hover {
+  background-color: #dfb132 !important;
+}
+
+.btn-outline {
+  background-color: #fff !important;
+  border: solid 1px #c29824 !important;
+  color: #c29824;
+}
+
+.btn-outline:hover {
+  background-color: #fcf4dd !important;
+}
+
+.btn-danger {
+  background-color: #c22f24 !important;
+}
+
+.btn-danger:hover {
+  background-color: #de382c !important;
+}
+
+/* Sidebar Animation */
+
+.sidebar-open {
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.sidebar-close {
+  animation-name: slideOut;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-5rem);
+  }
+  100% {
+    transform: translateX(0.5rem);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(10rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

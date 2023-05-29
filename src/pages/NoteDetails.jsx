@@ -86,11 +86,12 @@ function NoteDetails() {
   };
 
   return (
-    <div>
-      <h1>Note Details for ID: {id}</h1>
+    <div className="sm:m-10 mt-5">
       {notes.length > 0 ? (
         <>
-          <h1>{notes[0].title}</h1>
+          <h1 className="text-4xl font-bold text-[#c29824] mb-3">
+            {notes[0].title}
+          </h1>
           <p>{notes[0].content}</p>
         </>
       ) : (
@@ -102,12 +103,14 @@ function NoteDetails() {
       <div className="grid grid-cols-3 gap-10 my-5">
         <Link to={`/notes/edit/${id}`} className="w-full">
           {" "}
-          <Button className="w-full">Edit</Button>
+          <Button className="w-full btn-primary">Edit</Button>
         </Link>
-        <Button onClick={handleArchive}>
+        <Button onClick={handleArchive} className="btn-outline">
           {isArchived ? "Unarchive" : "Archive"}
         </Button>
-        <Button onClick={handleDelete}>Delete</Button>
+        <Button onClick={handleDelete} className="btn-danger">
+          Delete
+        </Button>
       </div>
     </div>
   );
